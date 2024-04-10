@@ -54,6 +54,7 @@
   line-height: 1.35;
 }
 
-.contact-active {
+.contact-link {
   border-bottom: 1px #000 solid;
+  text-decoration: none;
 }
