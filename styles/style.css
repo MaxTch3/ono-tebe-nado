@@ -124,7 +124,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-items: center;
   padding-top: 135px;
   padding-left: 32px;
   color: #FFF;
@@ -142,10 +141,8 @@
   width: 256px;
   height: 51px;
   margin: 0;
-  border: 0;
   border: 1px #FFF solid;
   padding: 0;
-  outline: 0;
   color: #FFF;
   font-weight: 500;
   font-size: 22px;
