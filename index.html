@@ -13,34 +13,46 @@
 
 <body>
   <header class="header">
-    <nav>
-      <ul class="links">
-        <li class="link-box">
-          <a class="link link-active" href="#">главная</a>
+    <nav class="header__menu">
+      <ul class="header__links-list">
+        <li class="header__link-box">
+          <a class="header__links-list-item header__link_active" href="#">главная</a>
         </li>
-        <li class="link-box">
-          <div class="list-marker"></div>
-          <a class="link" href="#">посмотреть лоты</a>
+        <li class="header__link-box">
+          <div class="header__list-marker"></div>
+          <a class="header__links-list-item" href="#">посмотреть лоты</a>
         </li>
-        <li class="link-box">
-          <div class="list-marker"></div>
-          <a class="link" href="#">об аукционе</a>
+        <li class="header__link-box">
+          <div class="header__list-marker"></div>
+          <a class="header__links-list-item" href="#">об аукционе</a>
         </li>
       </ul>
     </nav>
-    <a class="logo" href="#">
+    <a class="header__logo" href="#">
       <img src="./images/logo-black.svg" alt="Логотип">
     </a>
-    <div class="contacts">
-      <a class="contact-link" href="tel:+99995555555">+9 999 555 5555</a>
-      <a class="contact-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-      <p>наб. Принсенграхт 263-265, Амстердам</p>
+    <div class="header__contacts">
+      <a class="header__contact-link" href="tel:+99995555555">+9 999 555 5555</a>
+      <a class="header__contact-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+      <address class="header__address">наб. Принсенграхт 263-265, Амстердам</address>
     </div>
   </header>
+
   <main class="main">
     <section class="cover">
-
+      <div class="overlay"></div>
+      <h1 class="cover__title">
+        <span class="aligned-text">О<span class="letter-spacing-extended">но</span></span>
+        <span class="aligned-text_center">те<span class="letter-spacing-extended">бе</span></span>
+        <span class="aligned-text_right"><span class="letter-spacing-extended">н</span>ад<span
+            class="no-letter-spacing">о</span></span>
+      </h1>
+      <div class="cover__description">
+        <h2 class="cover__description-text">Аукцион вещей, в которые никто не верил</h2>
+        <button class="bet-button">Сделать ставку</button>
+      </div>
     </section>
+
     <section class="lots"></section>
     <section class="about"></section>
   </main>
