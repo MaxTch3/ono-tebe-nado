@@ -6,5 +6,5 @@
 * Использована методы флекс-верстки и грид-верстки
 * Сайт адаптирован для разрешений экранов от 1100px
 
-### Ссылка на GitHub Pages:
-https://maxtch3.github.io/ono-tebe-nado/index.html
+### Ссылка на GitHub репозиторий:
+https://github.com/MaxTch3/ono-tebe-nado
