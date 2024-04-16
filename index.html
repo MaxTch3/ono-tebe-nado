@@ -31,11 +31,11 @@
     <a class="header__logo" href="#">
       <img src="./images/logo-black.svg" alt="Логотип">
     </a>
-    <div class="header__contacts">
-      <a class="header__contact-link" href="tel:+99995555555">+9 999 555 5555</a>
-      <a class="header__contact-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-      <address class="header__address">наб. Принсенграхт 263-265, Амстердам</address>
-    </div>
+    <address class="address header__address">
+      <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
+      <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+      <span>наб. Принсенграхт 263-265, Амстердам</span>
+    </address>
   </header>
 
   <main class="main">
@@ -124,7 +124,49 @@
       </div>
     </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <address class="address footer__address">
+      <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
+      <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+      <span>наб. Принсенграхт 263-265, Амстердам</span>
+    </address>
+    <nav class="footer__menu">
+      <ul class="footer__links-list">
+        <li>
+          <a class="footer__links-list-item footer__link_active" href="#">главная</a>
+        </li>
+        <li>
+          <a class="footer__links-list-item" href="#">посмотреть лоты</a>
+        </li>
+        <li>
+          <a class="footer__links-list-item" href="#">об аукционе</a>
+        </li>
+      </ul>
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a href="#" class="footer__social-link">
+            <div class="footer__social-icon">
+              <img src="#" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a href="#" class="footer__social-link">
+            <div class="footer__social-icon">
+              <img src="#" alt="">
+            </div>
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a href="#" class="footer__social-link">
+            <div class="footer__social-icon">
+              <img src="#" alt="">
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 
 </html>

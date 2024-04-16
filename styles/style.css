@@ -43,24 +43,24 @@
   width: 148px;
 }
 
-.header__contacts {
+.address {
   display: flex;
   flex-direction: column;
-  justify-self: end;
   align-items: start;
   width: 100%;
   max-width: 240px;
   font-size: 18px;
+  font-style: normal;
   line-height: 1.35;
 }
 
-.header__contact-link {
-  border-bottom: 1px #000 solid;
-  text-decoration: none;
+.header__address {
+  justify-self: end;
 }
 
-.header__address {
-  font-style: normal;
+.address__link {
+  border-bottom: 1px #000 solid;
+  text-decoration: none;
 }
 
 .cover {
@@ -280,3 +280,16 @@
   font-size: 20px;
   line-height: 1.2;
 }
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 149px 1fr;
+  align-items: start;
+  height: 293px;
+  padding: 178px 50px 91px;
+}
+
+.footer__address {
+  justify-self: start;
+}
+
