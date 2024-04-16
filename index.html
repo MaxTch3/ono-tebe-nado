@@ -16,15 +16,15 @@
     <nav class="header__menu">
       <ul class="header__links-list">
         <li class="header__link-box">
-          <a class="header__links-list-item header__link_active" href="#">главная</a>
+          <a class="header__links-list-item header__link_active" href="#main">главная</a>
         </li>
         <li class="header__link-box">
           <div class="header__list-marker"></div>
-          <a class="header__links-list-item" href="#">посмотреть лоты</a>
+          <a class="header__links-list-item" href="#lots">посмотреть лоты</a>
         </li>
         <li class="header__link-box">
           <div class="header__list-marker"></div>
-          <a class="header__links-list-item" href="#">об аукционе</a>
+          <a class="header__links-list-item" href="#about">об аукционе</a>
         </li>
       </ul>
     </nav>
@@ -38,7 +38,7 @@
     </address>
   </header>
 
-  <main class="main">
+  <main class="main" id="main">
     <section class="cover">
       <div class="overlay"></div>
       <h1 class="cover__title">
@@ -53,7 +53,7 @@
       </div>
     </section>
 
-    <section class="lots">
+    <section class="lots" id="lots">
       <h2 class="lots__heading">Лоты</h2>
 
       <ul class="lots__card-list">
@@ -65,7 +65,6 @@
               <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не
                 знали, что режиссёр — Пол Томас
                 Андерсон?</p>
-
             </article>
           </a>
         </li>
@@ -97,7 +96,7 @@
       </ul>
       <a class="lots__look-more-link" href="#">посмотреть больше</a>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__column">
         <div class="about__logo">
           <img class="about__logo-image" src="./images/logo-white.svg" alt="Логотип">
@@ -130,42 +129,42 @@
       <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
       <span>наб. Принсенграхт 263-265, Амстердам</span>
     </address>
-    <nav class="footer__menu">
+    <nav>
       <ul class="footer__links-list">
         <li>
-          <a class="footer__links-list-item footer__link_active" href="#">главная</a>
+          <a class="footer__links-list-item footer__link_active" href="#main">главная</a>
         </li>
         <li>
-          <a class="footer__links-list-item" href="#">посмотреть лоты</a>
+          <a class="footer__links-list-item" href="#lots">посмотреть лоты</a>
         </li>
         <li>
-          <a class="footer__links-list-item" href="#">об аукционе</a>
-        </li>
-      </ul>
-      <ul class="footer__social-list">
-        <li class="footer__social-list-item">
-          <a href="#" class="footer__social-link">
-            <div class="footer__social-icon">
-              <img src="#" alt="">
-            </div>
-          </a>
-        </li>
-        <li class="footer__social-list-item">
-          <a href="#" class="footer__social-link">
-            <div class="footer__social-icon">
-              <img src="#" alt="">
-            </div>
-          </a>
-        </li>
-        <li class="footer__social-list-item">
-          <a href="#" class="footer__social-link">
-            <div class="footer__social-icon">
-              <img src="#" alt="">
-            </div>
-          </a>
+          <a class="footer__links-list-item" href="#about">об аукционе</a>
         </li>
       </ul>
     </nav>
+    <ul class="footer__social-list">
+      <li class="footer__social-list-item">
+        <a href="#" class="footer__social-link">
+          <div class="footer__social-icon">
+            <img src="./images/yt.svg" alt="YouTube">
+          </div>
+        </a>
+      </li>
+      <li class="footer__social-list-item">
+        <a href="#" class="footer__social-link">
+          <div class="footer__social-icon">
+            <img src="./images/vk.svg" alt="ВКонтакте">
+          </div>
+        </a>
+      </li>
+      <li class="footer__social-list-item">
+        <a href="#" class="footer__social-link">
+          <div class="footer__social-icon">
+            <img src="./images/pinterest.svg" alt="Printerest">
+          </div>
+        </a>
+      </li>
+    </ul>
   </footer>
 </body>
 
