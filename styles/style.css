@@ -1,28 +1,27 @@
 .header {
   display: grid;
-  grid-template-columns: 1fr 124px 1fr;
+  grid-template-columns: 227fr min-content 225fr;
   align-items: center;
-  height: 293px;
-  padding: 92px 50px 96px;
+  padding: 92px 50px 93px;
 }
 
 .header__links-list {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 387px;
+  justify-content: start;
+  gap: 32px;
   font-size: 18px;
   line-height: 1.2;
 }
 
-.header__link-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.header__links-list-item {
+  list-style-type: circle;
+}
+
+.header__links-list-item_no-bullit {
   list-style-type: none;
 }
 
-.header__links-list-item {
+.header__link {
   border-bottom: 1px #000 solid;
   text-decoration: none;
 }
@@ -31,15 +30,7 @@
   border-bottom: none;
 }
 
-.header__list-marker {
-  width: 7px;
-  height: 7px;
-  border: 1px #000 solid;
-  border-radius: 50%;
-}
-
 .header__logo {
-  justify-self: center;
   width: 148px;
 }
 
@@ -65,9 +56,7 @@
 
 .cover {
   position: relative;
-  width: 1100px;
-  height: 757px;
-  padding: 165px 50px 0;
+  padding: 165px 50px 51px;
   background-image: url(../images/cover.jpg);
   background-position: center center;
   background-size: cover;
@@ -75,8 +64,7 @@
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   opacity: 0.6;
@@ -93,17 +81,13 @@
   text-transform: uppercase;
 }
 
-.letter-spacing-extended {
-  letter-spacing: 0.6em;
-}
-
-.no-letter-spacing {
-  letter-spacing: normal;
-}
-
 .aligned-text {
   display: block;
   line-height: 1.15;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
 }
 
 .aligned-text_center {
@@ -118,6 +102,10 @@
   text-align: right;
 }
 
+.no-letter-spacing {
+  letter-spacing: normal;
+}
+
 .cover__description {
   position: relative;
   z-index: 1;
@@ -130,7 +118,6 @@
 }
 
 .cover__description-text {
-  font-weight: 400;
   font-size: 22px;
   line-height: 1.27;
   text-transform: uppercase;
@@ -174,7 +161,7 @@
 
 .lots__card-list-item {
   flex-grow: 1;
-  max-width: 334px;
+  width: 334px;
   min-height: 563px;
 }
 
@@ -190,24 +177,12 @@
   width: 100%;
   height: 100%;
   padding: 48px 40px;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.card_type_book {
-  background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.card_type_picture {
-  background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
@@ -226,6 +201,14 @@
   line-height: 1.2;
 }
 
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
 .lots__look-more-link {
   margin-left: 40px;
   border-bottom: 1px #000 solid;
@@ -242,15 +225,14 @@
   display: grid;
   grid-template-columns: 359px auto;
   grid-template-rows: 240px auto;
-  grid-template-areas:
-    "about__logo about__title"
-    "about__white-space about__text";
   row-gap: 6px;
   padding-top: 35px;
 }
 
 .about__logo {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 240px;
   height: 240px;
   margin-left: 47px;
@@ -259,11 +241,7 @@
 }
 
 .about__logo-image {
-  position: relative;
-  top: 62px;
-  left: 46px;
   width: 148px;
-  height: 114px;
 }
 
 .about__title {
@@ -276,6 +254,8 @@
 .about__text {
   display: flex;
   flex-direction: column;
+  grid-column-start: -1;
+  grid-column-end: -2;
   gap: 26px;
   font-size: 20px;
   line-height: 1.2;
@@ -284,13 +264,7 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 149px 1fr;
-  align-items: start;
-  height: 293px;
   padding: 178px 50px 91px;
-}
-
-.footer__address {
-  justify-self: start;
 }
 
 .footer__links-list {
@@ -302,7 +276,7 @@
   list-style-type: none;
 }
 
-.footer__links-list-item {
+.footer__link {
   border-bottom: 1px #000 solid;
   text-decoration: none;
 }
